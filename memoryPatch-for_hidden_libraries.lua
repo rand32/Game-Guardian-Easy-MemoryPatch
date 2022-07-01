@@ -4,7 +4,7 @@ local function memoryPatch(offset, hex)
 	gg.searchNumber("h"..targetLibElfSig, gg.TYPE_BYTE) 
 	local targetLibElf = gg.getResults(gg.getResultCount())[1].address
 	gg.clearResults() 
-	if targetLibElf == nil then return error("cannot find target library.") end
+	if targetLibElf == nil then return error("failed to find target library.") end
 	----------------------// functions \\----------------------
 	local function checkHex(hex)
 		local chars = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F", "a", "b", "c", "d", "e", "f"}
