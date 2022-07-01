@@ -1,6 +1,6 @@
 local function memoryPatch(targetlib, offset, hex)
 
-	if targetlib == "" or targetlib == 0 or targetlib == nil or offset == "" or offset == 0 or offset == nil or hex == "" or hex == 0 or hex == nil then return false end	local targetLibElf = gg.getRangesList(targetlib) 
+	if targetlib == "" or targetlib == 0 or targetlib == nil or offset == "" or offset == 0 or offset == nil or hex == "" or hex == 0 or hex == nil then return false end	local targetLibElf = gg.getRangesList(targetlib) --oo 
 
 	----------------------// functions \\----------------------
 
