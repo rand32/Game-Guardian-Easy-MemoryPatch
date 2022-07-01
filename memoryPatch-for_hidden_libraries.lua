@@ -95,7 +95,7 @@ end
 
 ----------------------// example usage \\----------------------
 examplePatch = memoryPatch(0xD11294, "00008092C0035FD6") --u can leave spaces between hex.
-examplePatch2 = memoryPatch(0xD11294, 0x03) --also u can use bytes too.
+examplePatch2 = memoryPatch(0xD11294, "0x03") --also u can use bytes too.
 examplePatch.Modify() --modifies the offset to ur hex value.
 examplePatch.Restore() --restores the offset to default value.
 
